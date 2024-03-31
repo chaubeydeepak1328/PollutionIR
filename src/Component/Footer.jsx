@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
     return (
         <>
-            <footer>
+            <footer className="myfooter text-center" >
                 Copyright Deepak 2024 All Right reserved
             </footer>
         </>
