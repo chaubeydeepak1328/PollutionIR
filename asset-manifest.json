@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/PollutionIR/static/css/main.16749a8e.css",
-    "main.js": "/PollutionIR/static/js/main.e6c5e4da.js",
+    "main.css": "/PollutionIR/static/css/main.02620be8.css",
+    "main.js": "/PollutionIR/static/js/main.f889b78d.js",
+    "static/media/Error.png": "/PollutionIR/static/media/Error.702240cb96dd8ebde71a.png",
+    "static/media/logo.png": "/PollutionIR/static/media/logo.e7e9a3ea4ca8a0cdb5e5.png",
     "index.html": "/PollutionIR/index.html",
-    "main.16749a8e.css.map": "/PollutionIR/static/css/main.16749a8e.css.map",
-    "main.e6c5e4da.js.map": "/PollutionIR/static/js/main.e6c5e4da.js.map"
+    "main.02620be8.css.map": "/PollutionIR/static/css/main.02620be8.css.map",
+    "main.f889b78d.js.map": "/PollutionIR/static/js/main.f889b78d.js.map"
   },
   "entrypoints": [
-    "static/css/main.16749a8e.css",
-    "static/js/main.e6c5e4da.js"
+    "static/css/main.02620be8.css",
+    "static/js/main.f889b78d.js"
   ]
 }
