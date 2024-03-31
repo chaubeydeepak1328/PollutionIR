@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PollutionIR/static/css/main.16749a8e.css",
+    "main.js": "/PollutionIR/static/js/main.e6c5e4da.js",
+    "index.html": "/PollutionIR/index.html",
+    "main.16749a8e.css.map": "/PollutionIR/static/css/main.16749a8e.css.map",
+    "main.e6c5e4da.js.map": "/PollutionIR/static/js/main.e6c5e4da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16749a8e.css",
+    "static/js/main.e6c5e4da.js"
+  ]
+}
