@@ -98,7 +98,7 @@ const Home = ({ SearchData }) => {
                         <span className="fullAddress">{data.mylocation}</span>
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title" style={{ textAlign: 'center' }}>Pollution Info</h5>
+                        <h5 className="card-title" style={{ textAlign: 'center' }}>Pollution Information</h5>
                         <div className="data-container">
                             <div className="data-box">
                                 <p className="meter">CO : </p>

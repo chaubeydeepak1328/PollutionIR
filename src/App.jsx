@@ -25,6 +25,7 @@ const App = () => {
             <Navbar onFormSubmit={handleformSubmit} />
             <Routes>
                 <Route exact path="/" element={<Home SearchData={SearchData}  />} />
+                <Route exact path="/PollutionIR" element={<Home SearchData={SearchData}  />} />
                 <Route exact path="/route" Component={MyRoute} />
                 <Route path="*" Component={Error} />
             </Routes>

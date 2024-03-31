@@ -1,5 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Error404 from "../Images/Error.png";
+
 
 const Error = () => {
     return (
@@ -11,11 +13,11 @@ const Error = () => {
                         <h2>WE ARE SORRY , PAGE NOT FOUND!</h2>
                         <p>THE PAGE ARE YOU LOOKING FOR MIGHT HAVE BEEN REMOVED AND ITS NAME <br />
                             CHANGED OR IS TEMPORARILY UNAVAILABLE</p>
-                        <NavLink to="/" className="btn btn-style dashboard_btn">Back to Homepage</NavLink>
+                        <NavLink to="/" className="btn btn-style dashboard_btn bg-primary" style={{color:'white', width:'fit-content'}}>Back to Homepage</NavLink>
                     </div>
                     <div className="col-12 col-lg-5">
                         <figure>
-                            <img  className="col-12" src="/images/Error.png" alt="" />
+                            <img  className="col-12" src={Error404} alt="" />
                         </figure>
                     </div>
                 </div>
