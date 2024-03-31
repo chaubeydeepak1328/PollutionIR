@@ -15,7 +15,7 @@ const Error = () => {
                     </div>
                     <div className="col-12 col-lg-5">
                         <figure>
-                            <img  className="col-12" src={Img_404} alt="" />
+                            <img  className="col-12" src="/images/Error.png" alt="" />
                         </figure>
                     </div>
                 </div>
