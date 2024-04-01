@@ -6,8 +6,6 @@ import Error from "./Component/Error";
 import { Routes, Route } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import  Footer from './Component/Footer';
-
 
 const App = () => {
 
@@ -28,7 +26,6 @@ const App = () => {
                 <Route exact path="/route" Component={MyRoute} />
                 <Route path="*" Component={Error} />
             </Routes>
-            <Footer/>
         </>
     )
 }
