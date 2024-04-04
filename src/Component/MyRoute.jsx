@@ -8,8 +8,8 @@ function App() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const responseFrom = await fetch(`https://api.geoapify.com/v1/geocode/autocomplete?text=${from}&apiKey=cc4c88b448964d59a69a49036301173c`);
-        const responseTo = await fetch(`https://api.geoapify.com/v1/geocode/autocomplete?text=${to}&apiKey=cc4c88b448964d59a69a49036301173c`);
+        const responseFrom = await fetch(`https://api.geoapify.com/v1/geocode/autocomplete?text=${from}&apiKey=${process.env.REACT_APP_SECRET_KEY1}`);
+        const responseTo = await fetch(`https://api.geoapify.com/v1/geocode/autocomplete?text=${to}&apiKey=${process.env.REACT_APP_SECRET_KEY1}`);
         const dataFrom = await responseFrom.json();
         const dataTo = await responseTo.json();
 

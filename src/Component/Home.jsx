@@ -49,7 +49,7 @@ const Home = ({ SearchData }) => {
 
     useEffect(() => {
         const mylocation = async () => {
-            const response = await fetch(`https://api.geoapify.com/v1/geocode/autocomplete?text=${SearchData === "" ? "delhi India" : SearchData}&apiKey=cc4c88b448964d59a69a49036301173c`);
+            const response = await fetch(`https://api.geoapify.com/v1/geocode/autocomplete?text=${SearchData === "" ? "delhi India" : SearchData}&apiKey=${process.env.REACT_APP_SECRET_KEY1}`);
             const data = await response.json();
             // console.log(data);
             let lon = data.features[0].geometry.coordinates[0];
@@ -63,7 +63,7 @@ const Home = ({ SearchData }) => {
             pollution(lon, lat);
         }
         const pollution = async (lon, lat) => {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=84b3ef7e6cc3cbda6e25907eb64340a0`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_SECRET_KEY2}`);
         const data1 = await response.json();
         // console.log(data1)
 
