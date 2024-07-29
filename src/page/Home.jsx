@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import GaugeMeter from "../Component/GaugeMeter";
-import WeatherCard from "../Component/WeatherCard";
+import { WeatherState } from "../WeatherContext";
 
 
 
@@ -22,11 +22,7 @@ const Home = ({ SearchData }) => {
         NH3: ""
     });
 
-    const [user_loc, setUser_loc] = useState(
-        {
-            lat: '', lon: ''
-        }
-    )
+    const { setUser_loc } = WeatherState();
 
 
     // Time Functionn to calculat the time 
@@ -109,7 +105,7 @@ const Home = ({ SearchData }) => {
     return (
         <>
 
-            <div className="card" style={{ width: 'fit content', padding: '.5rem' }}>
+            <div className="card home_Page" style={{ width: 'fit content', padding: '.5rem' }}>
                 <div className="aqi-container">
                     <div className="aqi">
                         <div className="text-center mt-2">
@@ -159,10 +155,6 @@ const Home = ({ SearchData }) => {
                         </div>
                     </div>
                     <div className="d-flex justify-content-center"><NavLink to="/route" className="btn btn-primary mt-2 col-12 col-sm-6">Find Route</NavLink></div>
-                </div>
-
-                <div>
-                    <WeatherCard lon={user_loc.lon} lat={user_loc.lat} />
                 </div>
             </div>
 

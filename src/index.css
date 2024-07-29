@@ -67,3 +67,19 @@ body {
 /* ===================================================================================== */
 /* Route css start here */
 /* ===================================================================================== */
+
+
+@media (max-width:600px) {
+  .home_Page{
+    margin-bottom: 5rem;
+  }
+  .weather_Page{
+    margin-bottom: 5rem;
+  }
+}
+@media (min-width:600px)
+{
+  .FooterBar{
+    display: none;
+  }
+}

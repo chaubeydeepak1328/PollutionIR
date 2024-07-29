@@ -4,7 +4,7 @@ import logo from "../Images/logo.png";
 
 
 
-const Navbar = ({onFormSubmit}) => {
+const Navbar = ({ onFormSubmit }) => {
 
     const [search, setSearch] = useState("");
 
@@ -13,7 +13,7 @@ const Navbar = ({onFormSubmit}) => {
     }
 
 
-    const handleSubmit = (event)=>{
+    const handleSubmit = (event) => {
         event.preventDefault();
         onFormSubmit(search)
         // console.log(`this is Navbar ${search}`)
@@ -34,6 +34,9 @@ const Navbar = ({onFormSubmit}) => {
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <NavLink className="nav-link active" aria-current="page" to="/">Dashboards</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link active" aria-current="page" to="/weather">Weather</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link active" aria-current="page" to="/route">Find Route</NavLink>

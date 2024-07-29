@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Temperaturegauge from "./Temperaturegauge";
+import Temperaturegauge from "../Component/Temperaturegauge";
+import { WeatherState } from "../WeatherContext";
 
 const WeatherCard = ({ lon, lat }) => {
+
+    const { user_loc } = WeatherState()
+
+
+
     const [weather, setWeather] = useState({
         search_location: '',
         humidity: '',
@@ -40,7 +46,7 @@ const WeatherCard = ({ lon, lat }) => {
     useEffect(() => {
         const fetchWeatherData = async () => {
             try {
-                const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.REACT_APP_SECRET_KEY2}`);
+                const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${user_loc.lat}&lon=${user_loc.lon}&units=metric&appid=${process.env.REACT_APP_SECRET_KEY2}`);
                 const data = await res.json();
 
                 // Log the data to inspect its structure
@@ -73,12 +79,12 @@ const WeatherCard = ({ lon, lat }) => {
     }, [lon, lat]);
     return (
         <>
-            <div className="card mt-5 col-12" >
+            <div className="card col-12 weather_Page" >
                 <div className="card-body">
                     <div className="text-center d-flex flex-column align-items-center m-auto" style={{ width: "fit-content" }} >
                         <h5>Current Weather</h5>
                         <p>{weather.current_time}</p>
-                        <Temperaturegauge />
+                        <Temperaturegauge temp={weather.temp} />
                     </div>
                     <p className="text-center mt-4">{weather.search_location}</p>
                     <div className=" d-flex flex-wrap gap-2 justify-content-evenly">
