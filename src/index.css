@@ -32,9 +32,7 @@ body {
   font-size: 1.2rem;
 }
 
-.data-container .data-box p{
-  color: black;
-}
+
 
 
 .data-container .data-box span{
@@ -63,11 +61,6 @@ body {
     gap: 2.5rem;
     justify-content: center;
   }
-  .data-container .data-box{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  
 }
 
 
