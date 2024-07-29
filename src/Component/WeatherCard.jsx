@@ -44,7 +44,7 @@ const WeatherCard = ({ lon, lat }) => {
                 const data = await res.json();
 
                 // Log the data to inspect its structure
-                console.log(data);
+                // console.log(data);
 
                 setWeather(prevWeather => ({
                     ...prevWeather,
@@ -83,19 +83,21 @@ const WeatherCard = ({ lon, lat }) => {
                     <p className="text-center mt-4">{weather.search_location}</p>
                     <div className=" d-flex flex-wrap gap-2 justify-content-evenly">
                         <div className="w-100 text-center">{weather.title}:{weather.desc}</div>
-                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between align-content-center"><p>Temp:</p>{weather.temp}°C</div>
-                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between align-content-center"><p>humidity: </p>{weather.humidity}</div>
-                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between align-content-center"><p>Temp_min:</p>{weather.temp_min}°C</div>
-                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between align-content-center"><p>Temp_max:</p>{weather.temp_max}°C</div>
-                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between align-content-center"><p>pressure:</p>{weather.pressure}</div>
-                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between align-content-center"><p>sunrise:</p>{weather.sunrise}</div>
-                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between align-content-center"><p>sunrise:</p>{weather.sunset}</div>
-                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between align-content-center"><p>sea Level:</p>{weather.sea_level}</div>
-                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between align-content-center"><p>ground Level:</p>{weather.ground_level}</div>
-                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between align-content-center"><p>wind:</p>{weather.wind_speed},{weather.wind_deg}</div>
+                        <div type="button" className=" btn btn-outline-secondary col-12 text center">Weather information</div>
+                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-5 col-lg-4 d-flex justify-content-between align-content-center"><p>Temp:</p>{weather.temp}°C</div>
+                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-5 col-lg-4 d-flex justify-content-between align-content-center"><p>humidity: </p>{weather.humidity}</div>
+                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-5 col-lg-4 d-flex justify-content-between align-content-center"><p>Temp_min:</p>{weather.temp_min}°C</div>
+                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-5 col-lg-4 d-flex justify-content-between align-content-center"><p>Temp_max:</p>{weather.temp_max}°C</div>
+                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-5 col-lg-4 d-flex justify-content-between align-content-center"><p>pressure:</p>{weather.pressure}</div>
+                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-5 col-lg-4 d-flex justify-content-between align-content-center"><p>sunrise:</p>{weather.sunrise}</div>
+                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-5 col-lg-4 d-flex justify-content-between align-content-center"><p>sunrise:</p>{weather.sunset}</div>
+                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-5 col-lg-4 d-flex justify-content-between align-content-center"><p>sea Level:</p>{weather.sea_level}</div>
+                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-5 col-lg-4 d-flex justify-content-between align-content-center"><p>ground Level:</p>{weather.ground_level}</div>
+                        <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-5 col-lg-4 d-flex justify-content-between align-content-center"><p>wind:</p>{weather.wind_speed},{weather.wind_deg}</div>
 
                     </div>
                 </div>
+
             </div>
 
         </>

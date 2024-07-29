@@ -5,6 +5,7 @@ import GaugeMeter from "../Component/GaugeMeter";
 import WeatherCard from "../Component/WeatherCard";
 
 
+
 const Home = ({ SearchData }) => {
     const [data, setData] = useState({
         date: "",
@@ -122,7 +123,7 @@ const Home = ({ SearchData }) => {
                     <span className="fullAddress">{data.mylocation}</span>
                 </div>
                 <div className="card-body ">
-                    <h5 className="card-title" style={{ textAlign: 'center' }}>Pollution Information</h5>
+                    <div type="button" className="btn btn-outline-secondary text-center col-12 mb-2" style={{ textAlign: 'center' }}>Pollution Information</div>
                     <div className="data-container d-flex flex-wrap gap-2 justify-content-evenly">
                         <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between">
                             <p className="meter">CO : </p>

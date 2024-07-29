@@ -24,6 +24,19 @@ function App() {
         setRouteData(dataRoute);
     };
 
+    function timeConvert(seconds) {
+        const hours = Math.floor(seconds / 3600);
+        const remainingSeconds = seconds % 3600;
+        const minutes = Math.ceil(remainingSeconds / 60);
+        return `${hours} h ${minutes} min`;
+    }
+
+    function distance(meters) {
+        const kilometers = Math.floor(meters / 1000);
+        const meter = meters % 1000;
+        return `${kilometers} km ${meter} m`;
+    }
+
     return (
         <div className='container d-flex justify-content-center flex-column align-items-center'>
             <form onSubmit={handleSubmit} className='col-12 col-lg-8  mt-4 d-flex flex-column gap-3'>
@@ -32,7 +45,7 @@ function App() {
                 <button className='btn bg-primary' style={{ color: 'white' }} type="submit">Get Route</button>
             </form>
             <div className='col-12 col-lg-8'>
-                {routeData===null ? (<><div className='d-flex justify-content-center align-content-end mt-5'><p className='text-success '>No Result Found</p></div></> ): (
+                {routeData === null ? (<><div className='d-flex justify-content-center align-content-end mt-5'><p className='text-success '>No Result Found</p></div></>) : (
                     <div className='card mt-5 pt-4 mb-4'>
                         <div className='d-flex justify-content-center gap-5'><p>From: {from}</p><p >To: {to}</p></div>
                         <p className='text-center'>Distance: {distance(routeData.features[0].properties.distance)}</p>
@@ -53,17 +66,6 @@ function App() {
     );
 }
 
-function timeConvert(seconds) {
-    const hours = Math.floor(seconds / 3600);
-    const remainingSeconds = seconds % 3600;
-    const minutes = Math.ceil(remainingSeconds / 60);
-    return `${hours} h ${minutes} min`;
-}
 
-function distance(meters) {
-    const kilometers = Math.floor(meters / 1000);
-    const meter = meters % 1000;
-    return `${kilometers} km ${meter} m`;
-}
 
 export default App;
