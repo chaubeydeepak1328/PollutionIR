@@ -118,43 +118,42 @@ const Home = ({ SearchData }) => {
                 <div className="mt-3" style={{ textAlign: "center", fontSize: '1.5rem' }}>
                     <span className="fullAddress">{data.mylocation}</span>
                 </div>
-                <div className="card-body ">
-                    <div type="button" className="btn btn-outline-secondary text-center col-12 mb-2" style={{ textAlign: 'center' }}>Pollution Information</div>
-                    <div className="data-container d-flex flex-wrap gap-2 justify-content-evenly">
+                <div className="d-flex flex-column align-items-center ">
+                    <div type="button" className="btn btn-outline-secondary text-center col-12 col-md-10 col-lg-8 mb-2" style={{ textAlign: 'center' }}>Pollution Information</div>
+                    <div className="d-flex flex-wrap gap-2 justify-content-evenly">
                         <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between">
                             <p className="meter">CO : </p>
-                            <span className="co">{data.CO}</span>
+                            <span className="co" style={{ color: "green" }}>{data.CO}</span>
                         </div>
                         <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between">
-                            <p className="meter">NO : </p>
-                            <span className="no">{data.NO}</span>
+                            <p className="meter" >NO : </p>
+                            <span className="no" style={{ color: "green" }}>{data.NO}</span>
                         </div>
                         <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between">
-                            <p className="meter">NO2 : </p>
-                            <span className="no2">{data.NO2}</span>
+                            <p className="meter" >NO2 : </p>
+                            <span className="no2" style={{ color: "green" }}>{data.NO2}</span>
                         </div>
                         <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between">
                             <p className="meter">O3 : </p>
-                            <span className="o3">{data.O3}</span>
+                            <span className="o3" style={{ color: "green" }}>{data.O3}</span>
                         </div>
                         <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between">
                             <p className="meter">SO2 : </p>
-                            <span className="so2">{data.SO2}</span>
+                            <span className="so2" style={{ color: "green" }}>{data.SO2}</span>
                         </div>
                         <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between">
                             <p className="meter">PM2.5 : </p>
-                            <span className="pm2_5">{data.PM2_5}</span>
+                            <span className="pm2_5" style={{ color: "green" }}>{data.PM2_5}</span>
                         </div>
                         <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between">
                             <p className="meter">PM10 : </p>
-                            <span className="pm10">{data.PM10}</span>
+                            <span className="pm10" style={{ color: "green" }}>{data.PM10}</span>
                         </div>
                         <div type="button" className="btn btn-outline-secondary data-box col-12 col-sm-5 col-md-3 col-lg-4 d-flex justify-content-between">
-                            <p className="meter">NH3 : </p>
-                            <span className="nh3">{data.NH3}</span>
+                            <p className="meter" >NH3 : </p>
+                            <span className="nh3" style={{ color: "green" }}>{data.NH3}</span>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center"><NavLink to="/route" className="btn btn-primary mt-2 col-12 col-sm-6">Find Route</NavLink></div>
                 </div>
             </div>
 

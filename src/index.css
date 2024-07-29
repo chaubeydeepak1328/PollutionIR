@@ -26,18 +26,6 @@ body {
   font-size: 1.2rem;
 }
 
-.data-container .data-box{
-  display: flex;
-  gap: 2rem;
-  font-size: 1.2rem;
-}
-
-
-
-
-.data-container .data-box span{
- color: green;
-}
 
 #aqi{
  color: green
