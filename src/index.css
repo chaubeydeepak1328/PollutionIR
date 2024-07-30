@@ -71,3 +71,637 @@ body {
     display: none;
   }
 }
+
+/* ===================================================================================== */
+/*Category */
+/* ===================================================================================== */
+
+.category_drawer{
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: start;
+  padding-top: 2rem;
+}
+
+.category_drawer svg {
+  border:2px solid black;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+/* ================================================= */
+/* support */
+/* ===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "popins", sans-serif;
+}
+
+:root {
+  --bgcolor: #f1f5fd;
+  --primary-color: #6f5de7;
+  --text-color: #828286;
+  --main-text-color: #333333;
+}
+
+#html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-text-color);
+}
+
+
+
+/* ============================================================================================================ */
+/* Responsive media Query */
+/* ============================================================================================================ */
+
+
+@media (min-width:1050px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500p !important;
+  }
+}
+
+
+@media (min-width:140px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px;
+  }
+}
+
+/* ============================================================================================================ */
+/* Navbar css start Here */
+/* ============================================================================================================ */
+
+.navbar-bg {
+  background-color: var(--bgcolor);
+  padding: 2rem 0;
+  z-index: 99;
+  position: relative;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+}
+
+.navbar li {
+  padding: 0 2rem;
+}
+
+.navbar li a {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar li a:hover {
+  color: var(--primary-color) !important;
+  text-shadow: 0 .2rem .3rem rgba(183, 171, 255, 0.5);
+}
+
+.btn-style {
+  width: 6rem;
+  height: 2.5rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.btn-style {
+  border: .1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 .1rem .5rem rgba(183, 171, 255, .5);
+
+}
+
+.btn-style-border:hover {
+  color: #fff !important;
+  background-color: var(--primary-color) !important;
+  text-transform: capitalize;
+  box-shadow: 0 .2rem .5rem rgba(183, 171, 255, .5);
+
+}
+
+.btn-style-border {
+  margin-right: 1rem;
+}
+
+
+/* ============================================================================================================ */
+/*Hero section css start Here  */
+/* ============================================================================================================ */
+
+header {
+  background-color: var(--bgcolor);
+  min-height: 65rem;
+  width: 100%;
+}
+
+@media (min-width:992px) {
+  header {
+    min-height: 55rem;
+  }
+}
+
+.main-hero-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-hero-container h1 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+
+.main-hero-para {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 1rem 0 1rem 0;
+  font-weight: lighter;
+  width: 75%;
+  margin-bottom: 1rem;
+}
+
+
+.main-hero-container h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: gray;
+}
+
+.input-group {
+  position: relative;
+}
+
+.form-control-text {
+  position: absolute;
+  height: 3rem;
+  border: none;
+  outline-style: none;
+  padding-left: 1.5rem !important;
+  font-size: 1rem;
+  font-weight: lighter;
+
+}
+
+.input-group-button {
+  position: absolute;
+  right: 14%;
+  top: 0.25rem;
+  color: white;
+  background-color: var(--primary-color);
+  height: 2.5rem;
+  width: 28%;
+  border-radius: 2rem !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.input-group-button:hover {
+  background-color: #4a33da;
+  box-shadow: 2px 1px 1px 1x gray;
+}
+
+.main-herosection-images {
+  position: relative;
+}
+
+.main-herosection-images img {
+  width: 85%;
+  margin-top: 10rem;
+  border-radius: 1.5rem;
+  position: absolute;
+
+}
+
+@media (max-width:992px) {
+  .main-herosection-images img {
+    margin-top: 35rem;
+  }
+}
+
+.main-herosection-images .main-hero-img2 {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  left: 78%;
+  top: -10%;
+  /* box-shadow: .8rem 0 .8rem rgba(0, 0, 0, 0.25); */
+
+}
+
+@media (min-width:992px) {
+  .main-herosection-images .main-hero-img2 {
+    position: fixed;
+    width: 8rem;
+    height: 8rem;
+    left: 88%;
+    top: 45%;
+    /* box-shadow: .8rem 0 .8rem rgba(0, 0, 0, 0.25); */
+  }
+}
+
+
+
+/* ============================================================================================================ */
+/* Work section start here */
+/* ============================================================================================================ */
+
+
+.work-container {
+  width: 80rem;
+  padding: .2rem;
+  box-shadow: .4rem .4rem 1.2rem rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+
+.work-container .main-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  word-spacing: 1rem;
+}
+
+.work-container-subdiv {
+  padding: 0 6rem;
+}
+
+.work-container .sub-heading {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.fontawesome-style {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--bgcolor);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+@media (min-width:992px) {
+  .work-container {
+    margin-top: -15rem;
+  }
+}
+
+
+/* ============================================================================================================ */
+/* About section start here */
+/* ============================================================================================================ */
+.common-section {
+  margin: 5rem 0;
+}
+
+.our-services {
+  width: 40vw;
+  height: 75%;
+  margin-top: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px .8rem .8rem;
+  border-radius: 1.5rem;
+  padding: 1rem 0;
+}
+
+.our-services .mini-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 3rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.our-services .main-heading {
+  font-weight: bolder;
+}
+
+.our-services .our-services-info {
+  margin-top: 4rem;
+}
+
+.our-services .our-services-number {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: .1rem solid var(--primary-color);
+  font-size: 1rem;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-services .our-services-data {
+  padding-left: 2rem;
+}
+
+.our-services .our-services-data p {
+  margin: 1rem 0;
+}
+
+.about_btn {
+  width: fit-content;
+  align-self: center;
+}
+
+/* @2nd Section of About US */
+
+.our-service-rightside-content {
+  padding-left: 8rem;
+}
+
+.our-services-rightside {
+  margin-top: 10rem;
+}
+
+
+@media (min-width:992px) {
+  .our-services .main-heading {
+    font-size: 2rem;
+  }
+
+  .our-services .our-services-data p {
+    margin: .2rem 0;
+  }
+
+  .our-services .our-services-info {
+    margin-top: 2rem;
+  }
+
+
+}
+
+@media (max-width:992px) {
+  .about_container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* ============================================================================================================ */
+/* Service section start here */
+/* ============================================================================================================ */
+
+.service-main-container {
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+.service-main-container .main-heading {
+  margin: 3rem 0;
+}
+
+
+.service-main-container .work-container-subdiv {
+  box-shadow: 0 .1rem .4rem rgba(0, 0, 0, 0.16);
+}
+
+.work-container-subdiv:hover {
+  background: var(--bgcolor);
+  cursor: pointer;
+}
+
+.work-container-subdiv:hover>.fontawesome-style {
+  background-color: #fff;
+}
+
+.work-container-subdiv .main-hero-para {
+  width: 100%;
+}
+
+.service-main-container .work-container-subdiv .fontawesome-style {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+
+@media (min-width:1400px) {
+  .service-container .col-xxl-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: auto;
+  }
+}
+
+@media (min-width:992px) {
+  .service-container .col-lg-4 {
+    flex: 0 0 auto;
+    width: 30% !important;
+    margin: 2.5rem auto;
+  }
+}
+
+
+/* ============================================================================================================ */
+/* Contact section start here */
+/* ============================================================================================================ */
+
+.contactus-section {
+  margin: 6rem 0;
+}
+
+.contactus-section img {
+  min-width: 80%;
+  max-height: 30rem;
+  height: auto;
+}
+
+.contact-input-field {
+  margin-bottom: 2.5rem;
+}
+
+.form-control {
+  height: 2.5rem;
+}
+
+.contact-rightside form .form-control {
+  border: 1px solid #ced4da;
+  height: 3.5rem;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  font-weight: lighter;
+}
+
+.contact-rightside form .form-check-input {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.form-checkbox-style {
+  margin: 2.5rem 0;
+}
+
+.contact-rightside form .main-hero-para {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin: 0;
+  font-weight: lighter;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.contact-rightside .contact-btn {
+  margin-top: 2.5rem;
+}
+
+.contact-rightside .contact-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+/* ============================================================================================================ */
+/* Footer section start here */
+/* ============================================================================================================ */
+.footer_support {
+  padding: 1rem 0;
+  background-color: #182334;
+}
+
+.footer_support h2 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer_support li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_support li {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.footer_support li:hover {
+  color: var(--primary-color);
+}
+
+
+.footer_support .main-hero-para {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer_support .fontawesome-style {
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
+
+.footer_support .fontawesome-style:hover {
+  transition: all 1s;
+  animation: rotatefont 1s linear infinite alternate-reverse;
+}
+
+
+@keyframes rotatefont {
+  0% {
+    transform: scale(.8);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.instagram {
+  background-image: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+  color: pink;
+}
+
+.whatsapp {
+  color: green;
+}
+
+.discord {
+  color: blueviolet;
+}
+
+.my_icons a {
+  list-style: none;
+  text-decoration: none;
+
+}
+
+
+/* ============================================================================================================ */
+/* Footer section start here */
+/* ============================================================================================================ */
+.dashboard_btn {
+  width: fit-content;
+  border-radius: 5rem !important;
+}
+
+
+.dashboard_btn:hover {
+  background-color: #4a33da !important;
+  color: white !important;
+}
+
+
+/* Header section start here */
+
+@media (max-width:600px) {
+  #header_h1 {
+    font-size: 1.5rem;
+  }
+}
+

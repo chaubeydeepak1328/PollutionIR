@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import GaugeMeter from "../Component/GaugeMeter";
 import { WeatherState } from "../WeatherContext";
 
@@ -97,7 +96,7 @@ const Home = ({ SearchData }) => {
             }
         }
         mylocation();
-    }, [SearchData]);
+    }, [SearchData, data, setUser_loc]);
 
 
 
