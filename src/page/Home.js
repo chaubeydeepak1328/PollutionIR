@@ -96,7 +96,7 @@ const Home = ({ SearchData }) => {
             }
         }
         mylocation();
-    }, [SearchData, data, setUser_loc]);
+    }, [SearchData, setUser_loc]);
 
 
 
